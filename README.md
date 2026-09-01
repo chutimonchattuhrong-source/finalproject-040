@@ -15,8 +15,9 @@
 
 ## 🔗 ลิงก์สำคัญ (Important Links)
 
-- **Source Code Repository:** `c:\laragon\www\040chutimon\kk\beybeykrukit-040`
+- **Source Code Repository:** `c:\laragon\www\040chutimon\kk\beybeykrukit-040` (Local) / [GitHub Repository](https://github.com/chutimonchattuhrong-source/finalproject-040)
 - **Figma Design Reference Path:** `c:\laragon\www\040chutimon\kk\figmam` (`Desktop - 1` ถึง `Desktop - 6`)
+- **Live Demo (ออนไลน์):** 👉 [คลิกที่นี่เพื่อดูเว็บไซต์จริง](https://chutimonchattuhrong-source.github.io/finalproject-040/)
 - **Live Local URL:** `http://localhost:3000/`
 
 ---
