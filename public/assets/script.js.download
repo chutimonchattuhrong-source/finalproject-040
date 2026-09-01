@@ -1,0 +1,33 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Mobile menu toggle (simple version)
+    const mobileMenuBtn = document.querySelector('.mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if(mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => {
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.backgroundColor = 'rgba(229, 223, 213, 0.95)';
+                navLinks.style.padding = '20px';
+                navLinks.style.borderBottom = '1px solid var(--border)';
+            }
+        });
+    }
+
+    // Category filter logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            // Normally would filter items here based on category
+        });
+    });
+});

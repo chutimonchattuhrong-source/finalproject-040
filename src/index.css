@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #E2D9CC;
+    color: #3E342B;
+    font-family: 'Prompt', sans-serif;
+  }
+}
+
+/* Custom Glassmorphism & Figma Card Styles */
+.figma-card {
+  background: rgba(238, 230, 217, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 30px -5px rgba(62, 52, 43, 0.08);
+}
+
+.figma-pill {
+  background: #E8DDCC;
+  border: 1px solid #D5C6B1;
+  color: #3E342B;
+}
+
+.figma-button-primary {
+  background-color: #8B6D4A;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.figma-button-primary:hover {
+  background-color: #725739;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 109, 74, 0.25);
+}
+
+.figma-button-secondary {
+  background-color: #D9C3A3;
+  color: #3E342B;
+  transition: all 0.2s ease-in-out;
+}
+
+.figma-button-secondary:hover {
+  background-color: #C8B08E;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #E2D9CC;
+}
+::-webkit-scrollbar-thumb {
+  background: #B89B5C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B6D4A;
+}
